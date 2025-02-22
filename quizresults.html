@@ -3,36 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="quizresults.css">
 </head>
 <body>
-    <div style="width: 1440px; height: 1650px; position: relative; background: white">
-        <div style="width: 1440px; height: 223px; left: 0px; top: 0px; position: absolute; background: #C8B6FF"></div>
-        <div style="width: 717px; height: 151px; left: 367px; top: 23px; position: absolute; text-align: center; color: black; font-size: 96px; font-family: Inria Serif; font-weight: 400; line-height: 144px; word-wrap: break-word">Quiz Results</div>
-        <div style="width: 913px; height: 519px; left: 264px; top: 489px; position: absolute; background: #C8B6FF; border-radius: 10px; justify-content: center; align-items: center; display: inline-flex">
-            <div style="width: 913px; height: 519px; background: #C8B6FF; border-radius: 10px"></div>
+    <div class="container">
+        <div class="header">
+            <div class="title">Quiz Results</div>
         </div>
-        <div style="width: 819px; height: 354px; left: 311px; top: 566px; position: absolute; text-align: center; color: black; font-size: 16px; font-family: Inria Serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Trade description here.</div>
-        <div style="width: 744px; height: 93px; left: 348px; top: 338px; position: absolute; background: rgba(217, 217, 217, 0); border: 3px black solid"></div>
-        <div style="width: 279px; height: 92px; left: 394px; top: 338px; position: absolute; text-align: center; color: black; font-size: 36px; font-family: Inria Serif; font-weight: 400; line-height: 54px; word-wrap: break-word">Best Trade:</div>
-        <div style="width: 419px; height: 92px; left: 673px; top: 338px; position: absolute; text-align: center; color: black; font-size: 36px; font-family: Inria Serif; font-weight: 400; line-height: 54px; word-wrap: break-word">Result</div>
-        <div style="width: 1440px; height: 380px; left: 0px; top: 1283px; position: absolute; background: #B8C0FF"></div>
-        <div style="width: 249px; height: 32px; left: 596px; top: 1591px; position: absolute; text-align: center; color: black; font-size: 12px; font-family: Inria Serif; font-weight: 400; line-height: 18px; word-wrap: break-word">Leisha Vishwanath, Manasa Vulugundam, <br/>Amru Thirumalai, Rianna Pais  <br/>© QuadCore</div>
-        <div style="width: 912px; height: 93px; left: 264px; top: 1118px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
-            <div style="width: 912px; height: 93px; background: #FFD6FF; border-radius: 10px"></div>
+        <div class="result-box"></div>
+        <div class="description">Trade description here.</div>
+        <div class="best-trade-box"></div>
+        <div class="best-trade-label">Best Trade:</div>
+        <div class="result">Result</div>
+        <div class="footer"></div>
+        <div class="credits">
+            Leisha Vishwanath, Manasa Vulugundam, <br>Amru Thirumalai, Rianna Pais  <br>© QuadCore
         </div>
-        <div style="width: 842px; height: 65px; left: 288px; top: 1133px; position: absolute; text-align: center"><span style="color: black; font-size: 20px; font-family: Inria Serif; font-weight: 400; line-height: 30px; word-wrap: break-word">Still unsure? Interview with an AI bot      </span><span style="color: black; font-size: 20px; font-family: Inria Serif; font-style: italic; font-weight: 400; line-height: 30px; word-wrap: break-word">     </span><span style="color: black; font-size: 20px; font-family: Inria Serif; font-weight: 400; line-height: 30px; word-wrap: break-word">to learn more about your best fit!</span></div>
-        <div style="width: 47px; height: 29px; left: 706px; top: 1151px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Inria Serif; font-style: italic; font-weight: 400; text-decoration: underline; line-height: 30px; word-wrap: break-word">here</div>
-        <div style="width: 98px; height: 49.42px; left: 772px; top: 154px; position: absolute; color: black; font-size: 24px; font-family: Inria Serif; font-weight: 400; line-height: 36px; word-wrap: break-word">Pathway</div>
-        <div style="width: 53px; height: 49.42px; left: 896px; top: 154px; position: absolute; color: black; font-size: 24px; font-family: Inria Serif; font-weight: 400; line-height: 36px; word-wrap: break-word">Quiz</div>
-        <div style="width: 69px; height: 49.42px; left: 490px; top: 154px; position: absolute; color: black; font-size: 24px; font-family: Inria Serif; font-weight: 400; line-height: 36px; word-wrap: break-word">Home</div>
-        <div style="width: 144px; height: 49.42px; left: 597px; top: 154px; position: absolute; color: black; font-size: 24px; font-family: Inria Serif; font-weight: 400; line-height: 36px; word-wrap: break-word">Virtual Tours</div>
-        <img style="width: 129px; height: 128px; left: 656px; top: 1302px; position: absolute" src="https://placehold.co/129x128" />
-        <div style="width: 598px; height: 25px; left: 421px; top: 1496px; position: absolute">
-            <div style="width: 96px; height: 25px; left: 0px; top: 0px; position: absolute; color: black; font-size: 30px; font-family: Inria Serif; font-weight: 400; line-height: 45px; word-wrap: break-word">Home</div>
-            <div style="width: 121px; height: 23px; left: 352px; top: 1px; position: absolute; color: black; font-size: 30px; font-family: Inria Serif; font-weight: 400; line-height: 45px; word-wrap: break-word">Pathway</div>
-            <div style="width: 190px; height: 23px; left: 139px; top: 1px; position: absolute; color: black; font-size: 30px; font-family: Inria Serif; font-weight: 400; line-height: 45px; word-wrap: break-word">Virtual Tours</div>
-            <div style="width: 90px; height: 18px; left: 508px; top: 4px; position: absolute; color: black; font-size: 30px; font-family: Inria Serif; font-weight: 400; line-height: 45px; word-wrap: break-word">Quiz</div>
+        <div class="interview-box"></div>
+        <div class="interview-text">
+            Still unsure? Interview with an AI bot <span class="italic"></span>to learn more about your best fit!
+        </div>
+        <div class="here">here</div>
+        <div class="nav-item pathway">Pathway</div>
+        <div class="nav-item quiz">Quiz</div>
+        <div class="nav-item home">Home</div>
+        <div class="nav-item virtual-tours">Virtual Tours</div>
+        <img class="logo" src="https://placehold.co/129x128" alt="Placeholder">
+        <div class="footer-nav">
+            <div class="nav-footer home">Home</div>
+            <div class="nav-footer pathway">Pathway</div>
+            <div class="nav-footer virtual-tours">Virtual Tours</div>
+            <div class="nav-footer quiz">Quiz</div>
         </div>
     </div>
 </body>
