@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Inria Serif', serif;
+}
+
+.container {
+    width: 1440px;
+    height: 2500px;
+    position: relative;
+    background: white;
+}
+
+.header {
+    width: 1440px;
+    height: 223px;
+    position: absolute;
+    background: #B8C0FF;
+}
+
+.title {
+    width: 717px;
+    height: 151px;
+    position: absolute;
+    left: 362px;
+    top: 23px;
+    text-align: center;
+    color: black;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 144px;
+}
+
+.description-box {
+    width: 912px;
+    height: 151px;
+    position: absolute;
+    left: 264px;
+    top: 319px;
+    background: #FFD6FF;
+    border-radius: 10px;
+}
+
+.description-text {
+    width: 746px;
+    height: 151px;
+    position: absolute;
+    left: 355px;
+    top: 319px;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.info-box {
+    width: 912px;
+    height: 107px;
+    position: absolute;
+    left: 264px;
+    top: 607px;
+    background: #B8C0FF;
+    border-radius: 10px;
+}
+
+.footer-box {
+    width: 919px;
+    height: 140px;
+    position: absolute;
+    left: 261px;
+    top: 1882px;
+    background: #B8C0FF;
+    border-radius: 10px;
+}
+
+.trade-option {
+    width: 200px;
+    height: 52px;
+    position: absolute;
+}
+
+.trade-text {
+    width: 200px;
+    height: 52px;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.svg-wrapper {
+    position: absolute;
+    top: 11px;
+    left: 14px;
+}
