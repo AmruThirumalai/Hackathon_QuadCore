@@ -1,4 +1,4 @@
 # Hackathon_QuadCore
 # we got this folks
-# https://www.youtube.com/watch?v=ZOc1snumoVw
-# https://www.youtube.com/watch?v=GNpDHh5ltuY
+# Success Story 1: https://www.youtube.com/watch?v=ZOc1snumoVw
+# Success Story 2: https://www.youtube.com/watch?v=GNpDHh5ltuY
