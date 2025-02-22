@@ -1,3 +1,11 @@
+/* CSS HEX */
+--mimi-pink: #ffd6ffff;
+--mauve: #e7c6ffff;
+--mauve-2: #c8b6ffff;
+--periwinkle: #b8c0ffff;
+--periwinkle-2: #bbd0ffff;
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
