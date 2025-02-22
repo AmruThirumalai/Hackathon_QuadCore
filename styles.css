@@ -6,7 +6,8 @@ body {
 }
 
 .container {
-    width: 1440px;
+    width: 100%; /* Use 100% for better responsiveness */
+    max-width: 1440px; /* Maximum width for large screens */
     margin: 0 auto;
 }
 
@@ -17,8 +18,9 @@ header {
 }
 
 h1 {
-    font-size: 96px;
+    font-size: 6rem; /* Responsive size */
     margin: 0;
+    color: #333; /* Dark color for contrast */
 }
 
 nav {
@@ -29,35 +31,62 @@ nav {
 }
 
 nav a {
-    font-size: 24px;
-    color: black;
+    font-size: 1.5rem; /* Responsive size */
+    color: black; /* Use a darker color for better visibility */
     text-decoration: none;
 }
 
-.about, .trade-school {
+nav a:hover {
+    color: #FF6F61; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.about{
     background: #FFD6FF;
     margin: 50px auto;
     padding: 40px;
-    width: 1134px;
+    width: 90%; /* Use percentage for better responsiveness */
+    max-width: 1134px; /* Maintain max width for larger screens */
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 2.5rem; /* Responsive size */
+    color: #333; /* Dark color for contrast */
 }
 
 p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.2rem; /* Responsive size */
+    line-height: 1.5; /* Improved line height for readability */
+    color: #555; /* Slightly darker color for better contrast */
+}
+
+.trade-school {
+    background: #FFD6FF;
+    margin: 50px auto;
+    padding: 40px;
+    width: 90%; /* Use percentage for better responsiveness */
+    max-width: 1134px; /* Maintain max width for larger screens */
+    border-radius: 10px;
+    text-align: left; /* Align text to the left */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+    overflow: auto; /* Ensure text wraps and doesn't get cut off */
+}
+
+.trade-school-content {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
 }
 
 .trade-school img {
     width: 226px;
     height: 226px;
     border-radius: 113px;
-    margin-top: 20px;
+    margin-right: 20px; /* Add margin to the right for spacing */
 }
+
 
 footer {
     background: #B8C0FF;
@@ -71,5 +100,22 @@ footer img {
 }
 
 footer p {
-    font-size: 12px;
+    font-size: 0.8rem; /* Responsive size */
+    color: #333; /* Dark color for contrast */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4rem; /* Smaller size for mobile */
+    }
+    nav a {
+        font-size: 1.2rem; /* Smaller size for mobile */
+    }
+    h2 {
+        font-size: 2rem; /* Smaller size for mobile */
+    }
+    p {
+        font-size: 1rem; /* Smaller size for mobile */
+    }
 }
