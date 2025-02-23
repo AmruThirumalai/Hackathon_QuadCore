@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
             && !skills.includes('dis-automation')
             ) { return "Mechanic! These trade workers diagnose, repair, and maintain mechanical systems, such as engines, brakes, transmissions, and other vehicle or machine components. They work on cars, trucks, motorcycles, industrial machines, and even airplanes. Mechanics use their technical knowledge and hands-on skills to ensure that machines run smoothly, and they are essential in keeping vehicles and machinery in safe working condition.";
         } else {
-            return "General Laborer! It looks like you have a wide range of skills and interests that don’t fit into one specific trade, and that’s a great thing! Many of your talents can apply to a variety of industries and roles. Whether it's hands-on work, problem-solving, or adapting to different environments, your versatility gives you the flexibility to excel in multiple areas. The world of trades is vast, and your broad skill set means you can thrive in many different types of work. Keep exploring – your perfect fit could be just around the corner!";
+            return "General Laborer! It looks like you have a wide range of skills and interests that don't fit into one specific trade, and that's a great thing! Many of your talents can apply to a variety of industries and roles. Whether it's hands-on work, problem-solving, or adapting to different environments, your versatility gives you the flexibility to excel in multiple areas. The world of trades is vast, and your broad skill set means you can thrive in many different types of work. Keep exploring, your perfect fit could be just around the corner!";
         }
     }
 });
