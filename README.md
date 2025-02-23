@@ -27,3 +27,43 @@ for series in json_data['Results']['series']:
     output = open(seriesId + '.txt','w')
     output.write (x.get_string())
     output.close()
+
+
+# JavaScript API
+const fetch = require('node-fetch');
+const fs = require('fs');
+
+const headers = { 'Content-Type': 'application/json' };
+const data = JSON.stringify({
+    seriesid: ['CUUR0000SA0', 'SUUR0000SA0'],
+    startyear: '2011',
+    endyear: '2014'
+});
+
+fetch('https://api.bls.gov/publicAPI/v2/timeseries/data/', {
+    method: 'POST',
+    headers: headers,
+    body: data
+})
+.then(response => response.json())
+.then(jsonData => {
+    jsonData.Results.series.forEach(series => {
+        const seriesId = series.seriesID;
+        const tableData = [];
+        
+        series.data.forEach(item => {
+            const year = item.year;
+            const period = item.period;
+            const value = item.value;
+            let footnotes = item.footnotes.map(fn => fn?.text).filter(Boolean).join(', ');
+            
+            if (period.startsWith('M')) {
+                tableData.push({ 'Series ID': seriesId, 'Year': year, 'Period': period, 'Value': value, 'Footnotes': footnotes });
+            }
+        });
+        
+        console.table(tableData);
+        fs.writeFileSync(`${seriesId}.txt`, JSON.stringify(tableData, null, 2));
+    });
+})
+.catch(error => console.error('Error:', error));
